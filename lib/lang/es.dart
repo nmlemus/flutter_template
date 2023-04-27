@@ -14,4 +14,5 @@ const Map<String, String> es = {
   'notifications_tab_title': 'Notificaciones',
   'profile_tab_title': 'Perfil',
   'slogan': 'Todas las noticias de Inteligencia Artificial \n en un solo lugar',
+  'support_us': 'Apóyanos',
 };
