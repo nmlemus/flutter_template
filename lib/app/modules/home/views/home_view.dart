@@ -11,7 +11,6 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     const listRoute = [
@@ -23,7 +22,7 @@ class HomeView extends GetView<HomeController> {
     ];
 
     final BottomNavigationBarController bottomNavigationController =
-    Get.put(BottomNavigationBarController());
+        Get.put(BottomNavigationBarController());
     return Scaffold(
       backgroundColor: Colors.lightGreen.shade50,
       /*appBar: AppBar(
@@ -40,7 +39,7 @@ class HomeView extends GetView<HomeController> {
         return listRoute[bottomNavigationController.currentIndex];
       }),
       bottomNavigationBar: Obx(
-            () => CurvedNavigationBar(
+        () => CurvedNavigationBar(
           height: 50.0,
           index: bottomNavigationController.currentIndex,
           color: Colors.white,
@@ -69,19 +68,18 @@ class HomeView extends GetView<HomeController> {
                   : Colors.grey,
             ),
             Icon(
-              Icons.my_library_books,
+              Icons.event_available_outlined,
               size: 25,
               color: bottomNavigationController.currentIndex == 2
                   ? Colors.blue
                   : Colors.grey,
             ),
             badges.Badge(
-              badgeContent: const Text('3'),
+              badgeContent: const Text('5'),
               badgeStyle: const badges.BadgeStyle(
-                  badgeColor: Colors.redAccent,
-                  elevation: 5,
+                badgeColor: Colors.redAccent,
+                elevation: 5,
               ),
-
               child: Icon(
                 Icons.notifications,
                 size: 25,

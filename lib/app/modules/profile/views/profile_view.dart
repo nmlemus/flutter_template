@@ -38,7 +38,7 @@ class _ProfileState extends State<ProfileView> {
       backgroundColor: Colors.blueGrey.shade50,
       appBar: AppBar(
         title: Text(
-          "Quienes Somos",
+          'about_the_app'.tr,
           style: Theme.of(context).textTheme.headline6,
         ),
         backgroundColor: Colors.white,
@@ -73,7 +73,7 @@ class _ProfileState extends State<ProfileView> {
               ),
               const Text(
                 'Tus compras a un clic. \n\n El precio mas bajo del mercado,'
-                    ' \n si encuentras un precio mejor nos los envias y lo igualamos.',
+                ' \n si encuentras un precio mejor nos los envias y lo igualamos.',
                 textAlign: TextAlign.center,
               ),
               TextButton(
