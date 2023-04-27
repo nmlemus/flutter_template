@@ -25,8 +25,8 @@ class Storage {
   }
 
   //write uid
-  Future<void> setUid(String uid) async{
-    return box.write('uid',uid);
+  Future<void> setUid(String uid) async {
+    return box.write('uid', uid);
   }
 
   //read first_time
@@ -41,5 +41,23 @@ class Storage {
   //write first_time
   Future<void> setFirstTime() async {
     await box.write('is_first', false);
+  }
+
+  // switch theme
+  Future<void> setTheme() async {
+    if (box.read('is_dark') == true) {
+      await box.write('is_dark', false);
+    } else {
+      await box.write('is_dark', true);
+    }
+  }
+
+  // get theme
+  bool getTheme() {
+    if (box.read('is_dark') == null || box.read('is_dark') == false) {
+      return false;
+    }
+
+    return true;
   }
 }

@@ -7,6 +7,10 @@ abstract class Routes {
   static const INTRO = _Paths.INTRO;
   static const PROFILE = _Paths.PROFILE;
   static const SPLASH = _Paths.SPLASH;
+  static const NEWSFEED = _Paths.NEWSFEED;
+  static const TIMELINE = _Paths.TIMELINE;
+  static const EVENTS = _Paths.EVENTS;
+  static const NOTIFICATIONS = _Paths.NOTIFICATIONS;
 }
 
 abstract class _Paths {
@@ -15,4 +19,8 @@ abstract class _Paths {
   static const INTRO = '/intro';
   static const PROFILE = '/profile';
   static const SPLASH = '/splash';
+  static const NEWSFEED = '/newsfeed';
+  static const TIMELINE = '/timeline';
+  static const EVENTS = '/events';
+  static const NOTIFICATIONS = '/notifications';
 }

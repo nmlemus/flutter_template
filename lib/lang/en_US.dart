@@ -10,4 +10,11 @@ const Map<String, String> en_US = {
   'details': 'Details',
   'total_recovered': 'Total Recovered',
   'about_the_app': 'About the app',
+  'ai_tab_title': 'AI News',
+  'timeline_tab_title': 'Timeline',
+  'events_tab_title': 'Events',
+  'notifications_tab_title': 'Notifications',
+  'profile_tab_title': 'Profile',
+  'slogan': 'All Artificial Intelligence news \n in a single place',
+  'support_us': 'Support us',
 };

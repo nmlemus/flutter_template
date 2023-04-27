@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_donation_buttons/flutter_donation_buttons.dart';
 
 import 'package:get/get.dart';
 import 'package:line_icons/line_icons.dart';
@@ -57,30 +58,30 @@ class _ProfileState extends State<ProfileView> {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: CachedNetworkImageProvider(
-                        'https://img1.wsimg.com/isteam/ip/66e6bd98-fc3c-4334-92c4-18186e69d392/play_store_512.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95'),
+                        'https://media.istockphoto.com/id/1364859722/photo/artificial-intelligence-concept.jpg?b=1&s=170667a&w=0&k=20&c=eHRkMLmlR79tWkAuR0_eJCerG4xNP7iPMgjqE3mzbZU='),
                   ),
                 ),
               ),
               const SizedBox(
                 height: 15,
               ),
-              const Text(
-                'Pa\'Cuba',
+              Text(
+                'ai_tab_title'.tr,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                maxLines: 2,
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
-              const Text(
-                'Tus compras a un clic. \n\n El precio mas bajo del mercado,'
-                ' \n si encuentras un precio mejor nos los envias y lo igualamos.',
+              Text(
+                'slogan'.tr,
                 textAlign: TextAlign.center,
               ),
               TextButton(
                   onPressed: () async {
                     getUrlLauncher(emailUrl);
                   },
-                  child: const Text('pacuba.app@gmail.com')),
+                  child: const Text('aiuda.apps@gmail.com')),
               TextButton.icon(
                 onPressed: () async {
                   launchWhatsApp();
@@ -95,7 +96,22 @@ class _ProfileState extends State<ProfileView> {
                   onPressed: () async {
                     getUrlLauncher(webUrl);
                   },
-                  child: const Text('https://pacuba.info/')),
+                  child: const Text('https://aiuda.apps/')),
+              const SizedBox(height: 15),
+              Text(
+                'support_us'.tr,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 15),
+              const PayPalButton(paypalButtonId: "T6NT2YYTVX6VS"),
+              const SizedBox(height: 15),
+              const BuyMeACoffeeButton(
+                buyMeACoffeeName: "nmlemus",
+                color: BuyMeACoffeeColor.Green,
+                //Allows custom styling
+                style: ButtonStyle(
+                    fixedSize: MaterialStatePropertyAll(Size(250, 60))),
+              ),
             ],
           ),
         ),

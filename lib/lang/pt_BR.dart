@@ -10,4 +10,10 @@ const Map<String, String> pt_BR = {
   'details': 'Detalhes',
   'total_recovered': 'Total de recuperados',
   'about_the_app': 'Sobre o Aplicativo',
+  'ai_tab_title': 'Noticias AI',
+  'timeline_tab_title': 'Linha do tempo',
+  'events_tab_title': 'Eventos',
+  'notifications_tab_title': 'Notificações',
+  'profile_tab_title': 'Perfil',
+  'slogan': 'Todas as notícias de Inteligência Artificial \n em um só lugar',
 };

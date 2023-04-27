@@ -8,4 +8,10 @@ const Map<String, String> es = {
   'details': 'Detalhes',
   'total_recovered': 'Total de recuperados',
   'about_the_app': 'Sobre la App',
+  'ai_tab_title': 'Noticias AI',
+  'timeline_tab_title': 'Línea de tiempo',
+  'events_tab_title': 'Eventos',
+  'notifications_tab_title': 'Notificaciones',
+  'profile_tab_title': 'Perfil',
+  'slogan': 'Todas las noticias de Inteligencia Artificial \n en un solo lugar',
 };
